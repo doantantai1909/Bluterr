@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.DoanTanTai.butler"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DangnhapActivityMainActivity"
+            android:label="@string/title_activity_dangnhap_activity_main" >
+        </activity>
+        <activity
+            android:name=".DangkyActivityMainActivity"
+            android:label="@string/title_activity_dangky_activity_main" >
+        </activity>
+        <activity
+            android:name=".ManhinhchinhActivityMainActivity"
+            android:label="@string/title_activity_manhinhchinh_activity_main" >
+        </activity>
+        <activity
+            android:name=".KhoanthuActivityMainActivity"
+            android:label="@string/title_activity_khoanthu_activity_main" >
+        </activity>
+        <activity
+            android:name=".DanhsachthuActivityMainActivity"
+            android:label="@string/title_activity_danhsachthu_activity_main" >
+        </activity>
+        <activity
+            android:name=".KhoanchiActivityMainActivity"
+            android:label="@string/title_activity_khoanchi_activity_main" >
+        </activity>
+        <activity
+            android:name=".DanhsachchiActivityMainActivity"
+            android:label="@string/title_activity_danhsachchi_activity_main" >
+        </activity>
+        <activity
+            android:name=".DanhmucthuchiActivityMainActivity"
+            android:label="@string/title_activity_danhmucthuchi_activity_main" >
+        </activity>
+        <activity
+            android:name=".ChuyentienActivityMainActivity"
+            android:label="@string/title_activity_chuyentien_activity_main" >
+        </activity>
+        <activity
+            android:name=".BaoCaoMainActivity"
+            android:label="@string/title_activity_bao_cao_main" >
+        </activity>
+        <activity
+            android:name=".DanhSachThuGDMainActivity"
+            android:label="@string/title_activity_danh_sach_thu_gdmain" >
+        </activity>
+        <activity
+            android:name=".DanhSachChiGDMainActivity"
+            android:label="@string/title_activity_danh_sach_chi_gdmain" >
+        </activity>
+    </application>
+
+</manifest>

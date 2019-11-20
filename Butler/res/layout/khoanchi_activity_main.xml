@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bluter11"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.DoanTanTai.butler.KhoanchiActivityMainActivity" >
+
+     <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+               
+                android:gravity="center"
+                android:text="Thêm Khoản Chi Tiêu"
+                android:textColor="#0D0C0C"
+                android:textSize="25dp"
+                android:textStyle="italic" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnkhoanchi"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/rounded_corner"
+        android:text="Thêm khoản chi"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnkc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnkhoanchi"
+        android:layout_alignRight="@+id/scrollView1"
+        android:layout_marginBottom="40dp"
+        android:text="Date" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editdatekc"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnkc"
+        android:layout_alignBottom="@+id/btnkc"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="date"
+        android:text="26/10/2019"
+        android:textColor="#FF0000" />
+
+    <TextView
+        android:id="@+id/textViewtr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editdatekc"
+        android:layout_alignBottom="@+id/editdatekc"
+        android:layout_alignLeft="@+id/scrollView1"
+        android:text="Ngày Chi:" />
+
+    <EditText
+        android:id="@+id/editsotienkc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/btnkc"
+        android:layout_centerVertical="true"
+        android:layout_span="2"
+        android:ems="10"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editsotienkc"
+        android:layout_alignBottom="@+id/editsotienkc"
+        android:layout_alignLeft="@+id/textViewtr"
+        android:text="Số Tiền:" />
+
+    <Spinner
+        android:id="@+id/spinnerkc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editsotienkc"
+        android:layout_alignRight="@+id/editsotienkc"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:id="@+id/tongtien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/spinnerkc"
+        android:layout_alignLeft="@+id/spinnerkc"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="Tên Khoản Chi:" />
+
+</RelativeLayout>

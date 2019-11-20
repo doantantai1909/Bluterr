@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Butler</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_dangnhap_activity_main">MainActivity</string>
+    <string name="title_activity_dangky_activity_main">MainActivity</string>
+    <string name="title_activity_manhinhchinh_activity_main">MainActivity</string>
+    <string name="title_activity_khoanthu_activity_main">MainActivity</string>
+    <string name="title_activity_danhsachthu_activity_main">MainActivity</string>
+    <string name="title_activity_khoanchi_activity_main">MainActivity</string>
+    <string name="title_activity_danhsachchi_activity_main">MainActivity</string>
+    <string name="title_activity_danhmucthuchi_activity_main">MainActivity</string>
+    <string name="title_activity_chuyentien_activity_main">MainActivity</string>
+    <string name="title_activity_bao_cao_main">BaoCaoMainActivity</string>
+    <string name="title_activity_danh_sach_thu_gdmain">DanhSachThuGDMainActivity</string>
+    <string name="title_activity_danh_sach_chi_gdmain">DanhSachChiGDMainActivity</string>
+
+</resources>

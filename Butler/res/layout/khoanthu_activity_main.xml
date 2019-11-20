@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bluter11"
+    
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.DoanTanTai.butler.KhoanthuActivityMainActivity" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:text="Thêm Khoản Thu Nhập"
+                android:textColor="#0D0C0C"
+                android:textSize="25dp"
+                android:textStyle="italic" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnkhoanthu"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="36dp"
+          android:background="@drawable/rounded_corner"
+        android:text="Thêm khoản thu" />
+
+    <Button
+        android:id="@+id/btnkt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnkhoanthu"
+        android:layout_alignRight="@+id/scrollView1"
+        android:layout_marginBottom="40dp"
+        android:text="Date" />
+
+    <EditText
+        android:id="@+id/editdatekt"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnkt"
+        android:layout_alignBottom="@+id/btnkt"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="date"
+        android:text="26/10/2019"
+        android:textColor="#FF0000" />
+
+    <TextView
+        android:id="@+id/textViewtr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editdatekt"
+        android:layout_alignBottom="@+id/editdatekt"
+        android:layout_alignLeft="@+id/scrollView1"
+        android:text="Ngày Thu:" />
+
+    <EditText
+        android:id="@+id/editsotienkt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/btnkt"
+        android:layout_centerVertical="true"
+        android:layout_span="2"
+        android:ems="10"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editsotienkt"
+        android:layout_alignBottom="@+id/editsotienkt"
+        android:layout_alignLeft="@+id/textViewtr"
+        android:text="Số Tiền:" />
+
+    <Spinner
+        android:id="@+id/spinnerkt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editsotienkt"
+        android:layout_alignRight="@+id/editsotienkt"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:id="@+id/tongtien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/spinnerkt"
+        android:layout_alignLeft="@+id/spinnerkt"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="Tên Khoản Thu:"
+        android:textStyle="bold" />
+
+</RelativeLayout>
